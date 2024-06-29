@@ -1,0 +1,171 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #131313;
+}
+::selection {
+  color: #fff;
+  background-color: #00ffee;
+}
+.judul{
+  font-family: 'Frijole', cursive;
+    color: #eeeeee;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.judul h1{
+  text-shadow: 0 0 25px #00ffee;
+}
+.text__score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  font-size: 40px;
+  font-family: 'Frijole', cursive;
+    color: #eeeeee;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.nama__pemain{
+  color: white;
+  font-family: cursive;
+}
+.container {
+  padding: 2rem 7rem;
+  border-radius: 14px;
+  background: #343a40;
+  box-shadow: 0 0 25px #00ffee;
+  font-family: "Poppins", sans-serif;
+  
+}
+.container:hover{
+  box-shadow: 0 0 25px #00ffee ,
+            0 0 50px #00ffee,
+            0 0 100px #00ffee;
+}
+.result_images {
+  display: flex;
+  column-gap: 7rem;
+}
+.container.start .user_result {
+  transform-origin: left;
+  animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.container.start .cpu_result {
+  transform-origin: right;
+  animation: cpuShake 0.7s ease infinite;
+}
+@keyframes cpuShake {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+.result_images img {
+  width: 100px;
+}
+.user_result img {
+  transform: rotate(90deg);
+}
+.cpu_result img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+.result {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #eeeeee;
+  margin-top: 1.5rem;
+}
+
+.option_image img {
+  width: 50px;
+}
+.option_images {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: space-between;
+}
+.container.start .option_images {
+  pointer-events: none;
+}
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.option_image:hover {
+  opacity: 1;
+}
+.option_image.active {
+  opacity: 1;
+}
+.option_image img {
+  pointer-events: none;
+}
+.option_image p {
+  color: #00ffee;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+.btn-pilahan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.btn-pilahan .rules{
+  padding: 10px 20px;
+  background-color: #131313;
+  border: 1px solid #00ffee;
+  border-radius: 10px;
+  color: #eeeeee;
+  width: 100px;
+  text-align: center;
+}
+.btn-pilahan .reset{
+  padding: 10px 20px;
+  background-color: #eeeeee;
+  border: 1px solid #00ffee;
+  border-radius: 10px;
+  color: #131313;
+  width: 100px;
+  text-align: center;
+}
+.cr{
+  color: #eeeeee;
+  text-shadow: 0 0 25px #00ffee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

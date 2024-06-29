@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Game | Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="judul">
+      <h1>Batu-Kertas-Gunting</h1>
+    </div>
+    <div class="text__score">
+      <p class="user__score">0</p>
+      <p>:</p>
+      <p class="comp__score">0</p>
+    </div>
+
+    <section class="container">
+      <div class="result_field">
+        <div class="result_images">
+          <span class="user_result">
+            <p class="nama__pemain">kamu</p>
+            <img src="images/batu.png" alt="" />
+          </span>
+          <span class="cpu_result">
+            <p class="nama__pemain">komputer</p>
+            <img src="images/batu.png" alt="" />
+          </span>
+        </div>
+        <div class="result">Ayoo Main!!</div>
+      </div>
+
+      <div class="option_images">
+        <span class="option_image">
+          <img src="images/batu.png" alt="" />
+          <p>Batu</p>
+        </span>
+        <span class="option_image">
+          <img src="images/kertas.png" alt="" />
+          <p>Kertas</p>
+        </span>
+        <span class="option_image">
+          <img src="images/gunting.png" alt="" />
+          <p>Gunting</p>
+        </span>
+      </div>
+    </section>
+
+    <div class="btn-pilahan">
+      <div class="rules" onclick="rules()">Peraturan</div>
+      <div class="reset" onclick="reset()">Reset</div>
+    </div>
+
+    <p class="cr"> ©️ 2024 shinkoushi.github.io </p>
+
+    <script src="script.js" defer></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
