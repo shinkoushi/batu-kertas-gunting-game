@@ -1,7 +1,7 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
   margin: 0;
@@ -45,7 +45,7 @@ body {
 }
 .nama__pemain{
   color: white;
-  font-family: cursive;
+  font-family: "Indie Flower", cursive;
 }
 .container {
   padding: 2rem 7rem;
@@ -53,6 +53,7 @@ body {
   background: #343a40;
   box-shadow: 0 0 25px #00ffee;
   font-family: "Poppins", sans-serif;
+  width: 600wh;
   
 }
 .container:hover{
